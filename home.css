@@ -246,7 +246,8 @@ body{
     margin: 0 40px;
 }
 .card2-flex{
-    margin: 40px 50px;
+    margin: 40px 208px;
+    padding-top: 60px;
     align-items: center;
     justify-content: center;
 }
@@ -257,10 +258,15 @@ body{
     align-items: start;
     border: 1px solid #f5FAFF;
     overflow-wrap: break-word;
-    margin:  0 31%;
+    margin-left: 30px;
+}
+.card1-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card2 h3{
-    font-size: 15px;
+    font-size: 14px;
     color: #995000;
     text-align: start;
     line-height: 1rem;
@@ -273,9 +279,11 @@ body{
     padding-top: 24px;
     padding-bottom: 16px;
     text-align: start;
-    line-height: 2rem
+    margin: 0;
+    line-height: 2rem;
 }
 .card2 p{
+    width: 24rem;
     font-size: 16px;
     color: #333333;
     text-align: start;
@@ -345,7 +353,6 @@ body{
 }
 .section9-flex{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -493,10 +500,34 @@ body{
         justify-content: start;
         align-items: start;
     }
+    .card2 p{
+        width: 100%;
+        margin: 0;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .card1-flex{
+        flex-direction: column;
+    }
+    .card2-flex{
+        margin: 0 ;
+    }
+    .images{
+        width: 90%;
+        height: 80%;
+    }
 }
 @media (max-width: 970px){
     .section4 h2{
         margin-left:  5%;
         margin-right:  10%;
+    }
+}
+@media (max-width: 1024px){
+    .card1-flex{
+        flex-direction: column;
+    }
+    .card2 p{
+        margin-bottom: 0;
     }
 }
